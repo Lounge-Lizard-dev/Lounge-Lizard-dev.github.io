@@ -1,0 +1,63 @@
+<head>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<div class="row" id="sendform">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate" />
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <span id="circle"></span>
+
+        <button
+          style="float: left"
+          id="submitBtn"
+          class="btn-large large waves-effect waves-light"
+          name="action"
+          onclick="sendMail()"
+        >
+          Send
+          <i class="material-icons right">send</i>
+        </button>
+        <p
+          id="process"
+          style="
+            float: left;
+            font-size: 26px;
+            color: rgb(144, 255, 144);
+            margin-left: 25px;
+          "
+        ></p>
+      </div>
